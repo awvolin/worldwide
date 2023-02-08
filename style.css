@@ -1,18 +1,38 @@
 body {
   background-color: #dd9ef0;
   text-decoration: none;
-  
 }
 
 div {
-    width: 100%;
-    position: absolute;
-    margin-top: 100px;
-    margin: auto;
-  
+  width: 100%;
+
   margin: 0;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.animate-charcter {
+  background-image: linear-gradient(
+    #f1f2f0 0%,
+    #f5ece1 29%,
+    #f7e1c8 67%,
+    #f7d9b7 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
